@@ -1,0 +1,8 @@
+When in dount, use brute force.
+    -- Ken Thompson, Bell Labs
+%
+Electricity travels a foot in a nano second.
+    -- Commodore Grace Murray Hopper, United States Navy
+%
+[Brook's Law of Prototypes] Plan to throw one away, you will any how.
+    -- Fred Brooks, University of North Carolina

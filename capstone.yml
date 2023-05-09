@@ -21,7 +21,65 @@ tasks:
       git clone {git_url}
       ```
     checks:
-      - name: check_command
+      - name: check_fortune_working
         title: Check fortune.py is present and working
         args:
           command: python fortune.py
+  - name: print-a-random-quote
+    title: Print a Random Quote
+    description: |
+      Print a quote from the fortune file at path `files/fortune.txt` selected at random.
+
+      #### The Fortune File Format
+
+      The fortune file is a simple text based file format containing multiple quotes seperated by a `%` character. in a new line.
+
+      The following example is a simple fortune file with three quotes. As you can see the quotes are seperated by a line containing `%` character.
+
+      ```
+      When in dount, use brute force.
+          -- Ken Thompson, Bell Labs
+      %
+      Electricity travels a foot in a nano second.
+          -- Commodore Grace Murray Hopper, United States Navy
+      %
+      [Brook's Law of Prototypes] Plan to throw one away, you will any how.
+          -- Fred Brooks, University of North Carolina
+      ```
+
+      Your task is to parse the fortune file, select one of the quotes at random and print it.
+    checks:
+      - name: check_fortune_working
+        title: Check fortune.py is present and working
+        args: {}
+
+      - name: check_fortune_random
+        title: Check if fortune.py is printing a random quote
+        args: {}
+
+
+# Task 1: print a quote.
+
+# print the first line of the quotes file. Assume the quotes file is at path quotes.txt
+
+# Task 2: print a quote at random
+
+# Parse the quotes file and pick one quote at random.
+
+# Task 3: custom quotes file
+
+# provide an ability to specify a custom quotes file using option -f
+
+# Task 4: custom quotes file using environment
+
+#  Support specifying quotes file using environment variable FORTUNE_FILE.
+
+# When both environment variable and -f flag are specified, the command line flag takes precedence.
+
+# Task 5: Short quotes
+
+# Add support for printing only a short quote when command-line option -s is used. When the -s option is used, only the quotes that have length not more than 100 are considered.
+
+# Task 6: quote length
+
+# The -s flag considers only quotes that are not longer than 100. Support a command-line flag -n to specify the maximum length allowed for short quotes.

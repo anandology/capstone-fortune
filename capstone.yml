@@ -1,8 +1,14 @@
 name: fortune
-title: Forture
-short_description: Forture
+title: Fortune
+is_published: true
+short_description: Implement the famous *forture* command of Unix in Python.
 description: |
-  Forture
+  Implement a simple version of popular Unix program [fortune][1] in Python.
+
+  [1]: https://en.wikipedia.org/wiki/Fortune_(Unix)
+
+  The fortune program prints a quote selected at random from a quotes file.
+
 tags: []
 tasks:
   - name: clone-repository
@@ -14,8 +20,4 @@ tasks:
       ```
       git clone {git_url}
       ```
-
-      **Note:** You will have to start the project first to see your unique Git URL. Otherwise,
-      you will only see `git_url` within curly braces.
     checks: []
-is_published: false  # change this when you want to publish

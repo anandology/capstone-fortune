@@ -30,7 +30,7 @@ tasks:
     description: |
       Print a quote from the fortune file at path `files/fortune.txt` selected at random.
 
-      #### The Fortune File Format
+      **The Fortune File Format**
 
       The fortune file is a simple text based file format containing multiple quotes seperated by a `%` character. in a new line.
 

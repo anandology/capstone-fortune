@@ -59,6 +59,29 @@ tasks:
         title: Check if fortune.py is printing a random quote
         args: {}
 
+  - name: option-f
+    title: Custom fortune file using -f option
+    description: |
+      Add a command-line option `-f` to specify a custom fortune file.
+      When this option is specified, the program will print a quote from the specified file instead of the default fortune file.
+
+      For example, when we specify `-f files/einstein.txt`, it prints one of the quotes by Albert Einstein.
+
+      ```
+      $ python fortune.py -f files/einstein.txt
+      Imagination is more important than knowledge.
+          -- Albert Einstein
+      ```
+    checks:
+      - name: check_fortune_is_from_file
+        title: Check fortune.py without -f
+        args: {}
+
+      - name: check_fortune_is_from_file
+        title: Check fortune.py with -f files/einstein.txt
+        args:
+          fortune_file: files/einstein.txt
+
 
 # Task 1: print a quote.
 

@@ -38,7 +38,7 @@ def check_fortune_is_from_file(context, args):
     root = context['app_dir']
     prepare_files(root)
 
-    fortune_file = Path(root) / "files" / "fortune.txt"
+    fortune_file = Path(root) / args.get("fortune_file", "files/fortune.txt")
     quotes = parse_quotes(fortune_file)
     output = run_fortune(cwd=root)
     if output not in quotes:

@@ -47,7 +47,9 @@ tasks:
           -- Fred Brooks, University of North Carolina
       ```
 
-      Your task is to parse the fortune file, select one of the quotes at random and print it.
+      **Your Task**
+
+      Your task is to parse the fortune file, select one of the quotes at random and print it. Go for it!
     checks:
       - name: check_fortune_working
         title: Check fortune.py is present and working
